@@ -1,0 +1,10 @@
+.checkbox a {
+    font-size: 14px;
+    color: #717171;
+    float: right;
+}
+
+.checkbox {
+    margin-bottom: 25px;
+    font-size: 14px;
+}

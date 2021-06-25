@@ -1,1 +1,257 @@
 /* You can add global styles to this file, and also import other style files */
+
+section {
+    margin-top: 1rem;
+}
+
+.block-with-text {
+    overflow: hidden;
+    position: relative;
+    line-height: 1.2em;
+    max-height: 6.0em;
+    text-align: justify;
+    margin-right: -1em;
+    padding-right: 1em;
+}
+
+.block-with-text:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.block-with-text:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: white;
+}
+
+.fa-heart.active {
+    color: deeppink;
+}
+
+.icons i,
+.icons svg {
+    color: deeppink;
+}
+
+.box {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 3px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
+    color: #4a4a4a;
+    padding: 1.25rem;
+}
+
+.tile {
+    align-items: stretch;
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-height: -webkit-min-content;
+    min-height: min-content;
+}
+
+.tile.is-child {
+    margin: 0 !important;
+}
+
+@media screen and (min-width: 769px) {
+    .tile.is-3 {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .tile:not(.is-child) {
+        display: flex;
+    }
+    .tile.is-parent {
+        padding: 0.75rem;
+    }
+}
+
+.media {
+    align-items: flex-start;
+    display: flex;
+    text-align: left;
+}
+
+.media-left {
+    margin-right: 1rem;
+}
+
+.media-left,
+.media-right {
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.image.is-64x64 {
+    height: 100px;
+    width: 100px;
+}
+
+.image.is-1by3 {
+    padding-top: 300%;
+}
+
+.image {
+    display: block;
+    position: relative;
+}
+
+.image.is-square img,
+.image.is-1by1 img,
+.image.is-5by4 img,
+.image.is-4by3 img,
+.image.is-3by2 img,
+.image.is-5by3 img,
+.image.is-16by9 img,
+.image.is-2by1 img,
+.image.is-3by1 img,
+.image.is-4by5 img,
+.image.is-3by4 img,
+.image.is-2by3 img,
+.image.is-3by5 img,
+.image.is-9by16 img,
+.image.is-1by2 img,
+.image.is-1by3 img {
+    height: 100%;
+    width: 100%;
+}
+
+.is-overlay,
+.image.is-square img,
+.image.is-1by1 img,
+.image.is-5by4 img,
+.image.is-4by3 img,
+.image.is-3by2 img,
+.image.is-5by3 img,
+.image.is-16by9 img,
+.image.is-2by1 img,
+.image.is-3by1 img,
+.image.is-4by5 img,
+.image.is-3by4 img,
+.image.is-2by3 img,
+.image.is-3by5 img,
+.image.is-9by16 img,
+.image.is-1by2 img,
+.image.is-1by3 img,
+.modal,
+.modal-background,
+.hero-video {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.image img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+img,
+audio,
+video {
+    height: auto;
+    max-width: 100%;
+}
+
+.media-content {
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: left;
+}
+
+.block-with-text {
+    overflow: hidden;
+    position: relative;
+    line-height: 1.2em;
+    max-height: 6.0em;
+    text-align: justify;
+    margin-right: -1em;
+    padding-right: 1em;
+}
+
+.level.is-mobile {
+    display: flex;
+}
+
+@media screen and (min-width: 769px) {
+    .level {
+        display: flex;
+    }
+}
+
+.level {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.level.is-mobile .level-left,
+.level.is-mobile .level-right {
+    display: flex;
+}
+
+@media screen and (min-width: 769px) {
+    .level-left {
+        display: flex;
+    }
+}
+
+.level-left {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.level-left,
+.level-right {
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.level.is-mobile .level-left+.level-right {
+    margin-top: 0;
+}
+
+.level.is-mobile .level-left,
+.level.is-mobile .level-right {
+    display: flex;
+}
+
+@media screen and (min-width: 769px) {
+    .level-right {
+        display: flex;
+    }
+}
+
+.level-right {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.level-left,
+.level-right {
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
